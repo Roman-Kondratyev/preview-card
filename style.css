@@ -6,7 +6,7 @@
         url(.//fonts/Mulish-ExtraBold.ttf);
 }
 
-@font-face{
+@font-face {
     src: url(./fonts/Poppins-Medium.ttf);
 }
 
@@ -64,8 +64,11 @@ header nav p:not(:last-child) {
 
 .introductory {
     display: flex;
-    margin-top: 187px;
     justify-content: space-between;
+}
+
+main {
+    margin-top: 187px;
 }
 
 
@@ -165,7 +168,7 @@ header nav p:not(:last-child) {
     width: 637px;
     height: 69px;
     margin: 0 389px 0 414px;
-    
+
 }
 
 .advantages .enumiration p {
@@ -214,27 +217,27 @@ header nav p:not(:last-child) {
     width: 960px;
 }
 
-.entry{
+.entry {
     margin-top: 122px;
 }
 
-.symbol{
+.symbol {
     background-image: url(./img/Text.svg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 200px;
     height: 80px;
-    margin: 0 510px  ;
+    margin: 0 510px;
 }
 
-.entry div h4{
+.entry div h4 {
     text-align: center;
     font: 800 50px 'Mulish';
     color: #001A49;
     margin-top: 30px;
 }
 
-.entry div p{
+.entry div p {
     background: linear-gradient(44.11deg, #8FBBE5 15.75%, #3D75BF 84.63%);
     border-radius: 33px;
     width: 206px;
@@ -286,42 +289,131 @@ footer div {
 }
 
 @media screen and (max-width:600px) {
-    body{
-        width: 600px;
+    body {
+        width: 100%;
     }
 
-header nav p{
-display: none;
-}
+    header {
+        width: 100%;
+        max-width: 90%;
+    }
 
-    .introductory .video{
+
+    header nav p {
         display: none;
     }
 
-    .statistic .oval{
+    main {
+        margin-top: 50px;
+    }
+
+    .introductory .video {
         display: none;
     }
 
-    .statistic .info{
+    .introductory {
+        margin-top: 90px;
+    }
+
+    .introductory h1 {
+        font: 600 40px 'Mulish';
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .intproductory p {
+        font: 200 10px 'Mulish';
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .intproductory div .button {
+        width: 170px;
+        margin: auto;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .statistic .oval {
+        display: none;
+    }
+
+    .statistic {
+        margin-top: 70px;
+    }
+
+    .statistic .info {
         flex-direction: column;
-        justify-content: center;
-        background-color: #f5f5f5;
+        align-items: center;
+        background-color: #F5F5F5;
         border-width: 0;
     }
 
     .info div:not(:last-child) {
-    border-right: 0 solid #E7EAEB;
-    border-width: 0;
-}
+        border-width: 0;
+    }
 
-.introductory {
-    margin-top: 90px;
-}
+    .advantages .scroll {
+        width: 600px;
+    }
 
-.introductory h1 {
-    font: 600 40px 'Mulish';
-    margin-bottom: 10px;
-}
+    .advantages {
+        width: 600px;
+        margin-top: 70px;
+    }
+
+    .advantages .enumiration {
+        width: 600px;
+        font: 400 30px 'Mulish';
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .advantages .enumiration .p {
+        font: 200 20px 'Mulish';
+        width: 100%;
+        margin: auto;
+    }
+
+    .scroll .icon h3 {
+        text-align: center;
+    }
+
+    .scroll .icon p {
+        text-align: center;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .entry .symbol {
+        display: none;
+    }
+
+    footer div {
+        justify-content: center;
+    }
 
 
+
+    .email {
+        font: 500 20px 'Mulish';
+        text-align: center;
+    }
+
+    .entr {
+        display: none;
+    }
+
+    .hschool {
+        display: none;
+    }
 }
